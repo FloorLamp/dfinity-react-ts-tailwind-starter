@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "lib": ["DOM"],
+    "strict": true,
+    "noEmit": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "jsx": "react"
+  },
+  "files": ["node_modules/@dfinity/agent/types/buffer-pipe.d.ts"],
+  "include": ["src/frontend", "src/frontend/custom.d.ts"]
+}

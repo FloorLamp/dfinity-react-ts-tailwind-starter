@@ -1,0 +1,55 @@
+{
+  "name": "dfinity-react-ts-tailwind-starter",
+  "version": "0.1.0",
+  "description": "",
+  "keywords": [],
+  "scripts": {
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
+    "test": "jest",
+    "types": "tsc",
+    "build:style": "tailwind build src/frontend/styles/index.css -o src/frontend/styles/tailwind.css",
+    "start": "npm run build:style && NODE_ENV=development webpack-dev-server --open --mode=development",
+    "build": "npm run build:style && NODE_ENV=production webpack"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.10.5",
+    "@dfinity/agent": "~/.cache/dfinity/versions/0.5.11/js-user-library",
+    "@testing-library/jest-dom": "^5.11.1",
+    "@testing-library/react": "^10.4.7",
+    "@testing-library/user-event": "^12.0.11",
+    "@types/react": "^16.9.43",
+    "@types/react-dom": "^16.9.8",
+    "autoprefixer": "^9.8.5",
+    "babel-loader": "^8.1.0",
+    "babel-preset-react-app": "^9.1.2",
+    "css-loader": "^3.6.0",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.1.0",
+    "jest-fetch-mock": "^3.0.3",
+    "postcss-loader": "^3.0.0",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "style-loader": "^1.2.1",
+    "tailwindcss": "^1.5.1",
+    "terser-webpack-plugin": "2.2.2",
+    "typescript": "^3.9.7",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "3.3.10",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {}
+}
