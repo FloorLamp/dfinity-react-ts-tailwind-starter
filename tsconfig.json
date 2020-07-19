@@ -12,5 +12,5 @@
     "jsx": "react"
   },
   "files": ["node_modules/@dfinity/agent/types/buffer-pipe.d.ts"],
-  "include": ["src/frontend", "src/frontend/custom.d.ts"]
+  "include": ["src/frontend"]
 }

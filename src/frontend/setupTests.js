@@ -7,7 +7,8 @@ import "@testing-library/jest-dom/extend-expect";
 require("jest-fetch-mock").enableMocks();
 fetchMock.dontMock();
 
-// jest.setTimeout(20000);
+// Increase jest timeout if necessary
+// jest.setTimeout(10000);
 
 import { HttpAgent, IDL } from "@dfinity/agent";
 import createAgent from "./createAgent";

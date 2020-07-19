@@ -3,10 +3,9 @@ import ReactDOM from "react-dom";
 import "./styles/tailwind.css";
 
 if (process.env.NODE_ENV === "development") {
-  const ic = require("@dfinity/agent");
-  const createAgent = require("./createAgent").default;
   if (!(window as any).ic) {
-    const { HttpAgent, IDL } = ic;
+    const { HttpAgent, IDL } = require("@dfinity/agent");
+    const createAgent = require("./createAgent").default;
     (window as any).ic = { agent: createAgent(), HttpAgent, IDL };
   }
 
