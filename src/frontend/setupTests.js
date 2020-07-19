@@ -11,18 +11,6 @@ fetchMock.dontMock();
 
 import { HttpAgent, IDL } from "@dfinity/agent";
 import createAgent from "./createAgent";
-import crypto from "crypto";
 
-if (typeof global.TextEncoder === "undefined") {
-  const { TextEncoder } = require("util");
-  global.TextEncoder = TextEncoder;
-}
-if (typeof global.crypto === "undefined") {
-  global.crypto = {
-    subtle: {
-      digest: (_, data) =>
-        crypto.createHash("sha256").update(Buffer.from(data)).digest(),
-    },
-  };
-}
+// Create a new agent per test
 global.ic = { agent: createAgent(__HOST__), HttpAgent, IDL };
