@@ -1,8 +1,10 @@
 {
   "name": "dfinity-react-ts-tailwind-starter",
   "version": "0.1.0",
-  "description": "",
-  "keywords": [],
+  "description": "Create DFINITY React App",
+  "keywords": [
+    "dfinity"
+  ],
   "scripts": {
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "test": "jest",
@@ -41,6 +43,7 @@
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "^3.11.0"
   },
+  "dependencies": {},
   "browserslist": {
     "production": [
       ">0.2%",
@@ -53,5 +56,11 @@
       "last 1 safari version"
     ]
   },
-  "dependencies": {}
+  "author": "Norton Wang <me@nortonwang.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/FloorLamp/dfinity-react-ts-tailwind-starter"
+  },
+  "bugs": "https://github.com/FloorLamp/dfinity-react-ts-tailwind-starter/issues"
 }
